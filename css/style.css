@@ -1,0 +1,410 @@
+  body {
+      margin: 0;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 75%;
+    }
+
+  div .container {
+      justify-content: center;
+      text-align: center;
+  }
+
+  footer, header, nav, section, label {
+  	margin: 0;
+  	padding: 0;
+  	border: 0;
+  	font-size: 100%;
+  	font: inherit;
+  	vertical-align: baseline;
+  }
+
+  article, aside, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section {
+  	display: block;
+  }
+
+  .parallax_history {
+    background: url("../picture/red.jpg")
+      repeat fixed 100%;
+    background-size: 100%;
+  }
+
+  .parallax_buy {
+    background: url("../picture/ski.jpg")
+      repeat fixed 100%;
+    background-size: 100%;
+  }
+
+  .parallax {
+    background: url("../picture/yandex.jpg")
+      repeat fixed 100%;
+    background-size: 100%;
+  }
+
+  .parallax-inner {
+    padding-top: 22%;
+    padding-bottom: 22%;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 500%;
+    color: white;
+    letter-spacing: 3px;
+  }
+
+  .padding {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .button {
+      border:none;
+      overflow:hidden;
+      text-decoration:none;
+      color:white;
+      background-color:black;
+      text-align:center;
+      cursor:pointer;
+      white-space:nowrap;
+    }
+
+  .button_2 {
+      border:none;
+      display:inline-block;
+      padding:8px 16px;
+      vertical-align:middle;
+      overflow:hidden;
+      text-decoration:none;
+      color:white;
+      background-color:black;
+      text-align:center;
+      cursor:pointer;
+      white-space:nowrap;
+    }
+
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+
+  .sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  /*  position: -webkit-sticky; /* Safari */
+  /*  position: sticky;
+    top: 0; */
+  }
+
+  .boooo li {
+    float: right;
+  }
+
+  .boooo li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .boom1:hover {
+    background-color: rgb(0, 102, 204);
+    color: white;
+  }
+
+  .boom2:hover {
+    background-color: #E3350D;
+    color: white;
+  }
+
+  .boom3:hover {
+    background-color: #ee6b2f;
+    color: white;
+  }
+
+  .boom4:hover {
+    background-color: #e6bc2f;
+    color: white;
+  }
+
+  .padding {
+    text-align: center;
+    margin: 5px 5px 5px 5px;
+    font-size: 1.4em;
+  }
+
+    hr {
+      width: 75%;
+      height: 1px;
+      background-color: #333;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 25px;
+      margin-bottom: 25px;
+  }
+
+  /* Footer */
+
+  footer {
+    text-align: center;
+    padding: 13px;
+    background-color: DarkSalmon;
+    color: white;
+  }
+
+  #footer ul {
+    background-color: DarkSalmon;
+    color: white;
+  }
+
+  #footer li {
+    line-height: 2;
+    margin-left: 2em;
+    padding-left: 2em;
+  }
+
+  #footer a:link {
+    text-decoration: none;
+    color: #333;
+  }
+
+  #footer a:visited {
+    text-decoration: none;
+    color: #333;
+  }
+
+  #footer a:hover {
+    text-decoration: underline;
+    color: hotpink;
+  }
+
+  #footer a:active {
+    text-decoration: underline;
+  }
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: DarkSalmon;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: DarkSalmon;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: DarkSalmon;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+.float-layout {
+  padding: 5px 5px;
+  float: left;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin: 0;
+  
+}
+
+.card-container {
+  overflow: hidden;
+}
+
+.card {
+  color: black;
+  min-height: 100%; /*replace this it in width: 100%*/
+  width: 50%;
+  float: right;
+}
+
+.card-title {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.card-desc {
+  padding: 10px;
+  text-align: left;
+  font-size: 18px;
+}
+
+/*add this it*/
+.card-image {
+  display: flex;
+}
+/*-------------*/
+
+div.card-image img {
+  width: 20%;
+  height: auto;
+}
+
+/* Phone Devices Query */
+@media only screen and (max-width: 37.5em) {
+  div.card-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /*add this it*/
+  .card-image {
+     flex-direction: column;
+  }
+  /*----------------------*/
+
+  .card {
+    width: 100%;
+    margin-top: -4px;
+  }
+}
