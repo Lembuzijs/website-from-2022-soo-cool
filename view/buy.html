@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iegāde | Tetris</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <ul class="boooo">
+    <li style="float:left"><a class="button" onclick="w3_open()">☰</a></li>
+    <!-- <li><button class="button" onclick="w3_open()">☰</button></li> -->
+    <!-- Sidebar -->
+    <div class="sidebar" style="display:none" id="mySidebar">
+      <button onclick="w3_close()" class="button_2">Aizvērt &times;</button>
+      <a class="boom1" href="../view/history.html">Speles vēsture</a>
+      <a class="boom2" href="../view/tetris.html">Spēlē tetri</a>
+      <a class="boom3" href="../view/buy.html">Iegāde</a>
+      <a class="boom4" href="../index.html">Galvenā lapa</a>
+    </div>
+    <li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="boom1">Pieslēdzies</a></li>
+  </ul>
+
+<!-- parallax -->>
+
+<div class="margin">
+  <section class="parallax_buy">
+    <div class="parallax-inner">
+      <h1>Iegāde</h1>
+    </div>
+  </section>
+</div>
+
+<!-- Page Content -->
+<div class="padding">
+  <h3>Spēles iegāde</h3>
+  <hr>
+  <p>Diemžēl, uz šo brīdi tetris nepardodas un ir brivi pieejams <a href="">šajā saitē</a></p>
+</div>
+
+
+
+<!-- login -->
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+<div class="container">
+  <label for="uname"><b>Lietotājvārds</b></label>
+  <input type="text" placeholder="Enter Username" name="uname" required>
+
+  <label for="psw"><b>Parole</b></label>
+  <input type="password" placeholder="Enter Password" name="psw" required>
+
+  <button type="submit">Pieslēgties</button>
+  <label>
+    <input type="checkbox" checked="checked" name="remember"> Atcerēties mani
+  </label>
+</div>
+
+<div class="container" style="background-color:#f1f1f1">
+  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Atcelt</button>
+</div>
+</form>
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+<!-- Footer -->
+<footer id="footer">
+  <ul>
+    <li><a href="https://github.com/lembuzijs">GitHub</a></li>
+    <li>&copy; SIA LLC Arturs Inc.</li><li>Diszains: Krišjānis Kariņš, Egīls Levits sadarbību ar <a href="https://w3schools.com">w3schools</a> un <a href="https://bank.lv">Latvijas banku</a>.</li>
+  </ul>
+</footer>
+</html>

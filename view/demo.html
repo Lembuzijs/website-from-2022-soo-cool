@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spēle</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<!-- Sidebar -->
+<div class="sidebar" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="button">Close &times;</button>
+  <a href="../view/history.html">Speles vēsture</a>
+  <a href="#">Spēles demonstrācija</a>
+  <a href="../view/buy.html">Iegāde</a>
+  <a href="../index.html">Galvenā lapa</a>
+</div>
+
+<!-- Page Content -->
+<div class="main_content">
+  <button class="button" onclick="w3_open()">☰</button>
+  <div class="container">
+    <h1>Demonstrācija</h1>
+  </div>
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+     
+</body>
+</html>

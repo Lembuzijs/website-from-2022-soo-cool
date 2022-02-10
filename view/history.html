@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vēsture | Tetris</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <ul class="boooo">
+    <li style="float:left"><a class="button" onclick="w3_open()">☰</a></li>
+    <!-- <li><button class="button" onclick="w3_open()">☰</button></li> -->
+    <!-- Sidebar -->
+    <div class="sidebar" style="display:none" id="mySidebar">
+      <button onclick="w3_close()" class="button_2">Aizvērt &times;</button>
+      <a class="boom1" href="../view/history.html">Speles vēsture</a>
+      <a class="boom2" href="../view/tetris.html">Spēlē tetri</a>
+      <a class="boom3" href="../view/buy.html">Iegāde</a>
+      <a class="boom4" href="../index.html">Galvenā lapa</a>
+    </div>
+    <li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="boom1">Pieslēdzies</a></li>
+  </ul>
+
+  <!-- Page Content -->
+
+  <div class="card-container">
+    <div class="float-layout">
+      <div class="card-image">
+        <img src="../picture/Typical_Tetris_Game.svg">
+        <div class="card">
+          <div class="card-title">Secinājumi</div>
+          <div class="card-desc">
+            Tetris ir puzles video spēle, ko 1984. gadā izveidoja <strong>PSRS</strong> programmatūras inženieris <strong>Aleksejs Pajitnovs</strong>. To ir publicējuši vairāki uzņēmumi vairākām platformām, visredzamāk strīdā par tiesību piešķiršanu 80. gadu beigās. Pēc ievērojama Nintendo publikācijas perioda tiesības atgriezās pie Pajitnova 1996. gadā, kurš kopā ar Henk Rogers līdzdibināja kompāniju <i>"Tetris Company"</i>, lai pārvaldītu licencēšanu.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- parallax -->>
+
+<div class="margin">
+  <section class="parallax_history">
+    <div class="parallax-inner">
+      <h1>Vēsture un iesākumi</h1>
+    </div>
+  </section>
+</div>
+
+<!-- Page Content -->
+<div class="main_content">
+  <div class="container">
+    <h3>Puzles spēle Tetris</h3>
+    <hr>
+    <p>Spēles mērķis ir izcīnīt viss skaistāko variācijas koeficientu un izveidot, viss jautrāko un operatīvāko spēles apvienošanas varbūtību.</p>
+    <p>Tetris (krievu: Тетрис) ir datorspēle, kuru 1984. gada jūnijā izstrādāja Aleksejs Pažitnovs, laikā, kad viņš strādāja Dorodņicina datorcentrā, PSRS zinātņu akadēmijā, Maskavā.[1] Nosaukums veidots no grieķu vārda "tetra" (τετρα), kas nozīmē "četri", un Pažitnova mīļākā sporta veida - tenisa - nosaukuma.[2] <br>
+
+Spēle daudzos variantos ir pielāgota gandrīz visām datoru operētājsistēmām, datorspēļu konsolēm, kā arī tādām ierīcēm kā grafiskie kalkulatori, mobilie telefoni u. c.
+Emacs Tetris <br>
+
+Lai gan Tetris versijas 1980. gadu laikā tika pārdotas mājas datoru plaformām, tas plašāk kļuva pazīstams kā rokā turamas spēļu iekārtas Game Boy versija, kas tika izlaista 1989. gadā. ASV videospēļu žurnāla Electronic Gaming Monthly 100. izdevums ierindoja Tetris pirmajā vietā no visu laiku dižākajām spēlēm. 2007. gadā Tetris tika ierindots otrajā vietā IGN 100 visu laiku labāko spēļu topā.[3]
+Spēles mērķis <br>
+Spēles mērķis ir pārvietot un pagriezt uz leju krītošas figūras (kas sastāv no četriem vienādiem kvadrātiem) tā, lai tās aizpildītu veselas rindas. </p>
+  </div>
+</div>
+
+<!-- login -->
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" action="#" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+<div class="container">
+  <label for="uname"><b>Lietotājvārds</b></label>
+  <input type="text" placeholder="Enter Username" name="uname" required>
+
+  <label for="psw"><b>Parole</b></label>
+  <input type="password" placeholder="Enter Password" name="psw" required>
+
+  <button type="submit">Pieslēgties</button>
+  <label>
+    <input type="checkbox" checked="checked" name="remember"> Atcerēties mani
+  </label>
+</div>
+
+<div class="container" style="background-color:#f1f1f1">
+  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Atcelt</button>
+
+</div>
+</form>
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+<!-- Footer -->
+<footer id="footer">
+  <ul>
+    <li><a href="https://github.com/lembuzijs">GitHub</a></li>
+    <li>&copy; SIA LLC Arturs Inc.</li><li>Diszains: Krišjānis Kariņš, Egīls Levits sadarbību ar <a href="https://w3schools.com">w3schools</a> un <a href="https://bank.lv">Latvijas banku</a>.</li>
+  </ul>
+</footer>
+</html>

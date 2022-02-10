@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RUKĀJAM TETRIIIII</title>
+    <meta charset="UTF-8">
 
+    <link href='http://fonts.googleapis.com/css?family=Lemon|Gochi+Hand' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/tetris.css">
+    <link id="fav" rel="shortcut icon" type="image/png" href="http://www.xarg.org/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P">
+  </head>
+<body>
+  <!-- Navbar -->
+  <ul class="boooo">
+    <li style="float:left"><a class="button" onclick="w3_open()">☰</a></li>
+    <!-- <li><button class="button" onclick="w3_open()">☰</button></li> -->
+    <!-- Sidebar -->
+    <div class="sidebar" style="display:none" id="mySidebar">
+      <button onclick="w3_close()" class="button_2">Aizvērt &times;</button>
+      <a class="boom1" href="../view/history.html">Speles vēsture</a>
+      <a class="boom2" href="../view/tetris.html">Turpini spēlēt tetri</a>
+      <a class="boom3" href="../view/buy.html">Iegāde</a>
+      <a class="boom4" href="../index.html">Galvenā lapa</a>
+    </div>
+  </ul>
+
+      <canvas id="canvas"></canvas>
+      <canvas id="preview"></canvas>
+      <canvas id="favicon"></canvas>
+  
+      <div id="edit">
+          <div id="open">Mainīt</div>
+          <div><input id="tilesX" type="range" min="5" max="70" value="21" onchange="textBoxEdit(this)"> X <input id="tilesY" type="range" min="5" max="70" value="35" onchange="textBoxEdit(this)"> Kvadrāti</div>
+          <div><input id="tilesSize" type="range" min="5" max="40" value="18" onchange="textBoxEdit(this)"> Kvadrātu lielums</div>
+          <div><input id="border" type="range" min="0" max="15" value="2" onchange="textBoxEdit(this)"> Border</div>
+          <div><input id="speedDelay" step="10" type="range" min="40" max="1000" value="200" onchange="textBoxEdit(this)"> Ātruma koeficients</div>
+  
+          <div><input type="checkbox" value="1" id="Cpause" onchange="textBoxEdit(this)"> Pauzē (p)</div>
+          <div><input type="checkbox" value="1" id="Cauto" onchange="textBoxEdit(this)"> Autopilots (a)</div>
+          <div><input type="checkbox" value="1" id="Cshadow" onchange="textBoxEdit(this)" checked="checked"> Ēno (s)</div>
+          <div><input type="checkbox" value="1" id="Cpreview" onchange="textBoxEdit(this)" checked="checked"> Pirmskats (w)</div>
+          <div><input type="checkbox" value="1" id="Cfavicon" onchange="textBoxEdit(this)" checked="checked"> Favicons (f)</div>
+          <div><input type="checkbox" value="1" id="Cgamepad" onchange="textBoxEdit(this)"> Spēlespads</div>
+          <div id="tables">
+          </div>
+      </div>
+  
+      <div id="best">
+          <div id="open2">Atzīme</div>
+          <table>
+              <tr>
+                  <th>Vieta</th>
+                  <th>Vārds</th>
+                  <th>Vērtējums</th>
+                  <th>Līnijas izdzēstas</th>
+              </tr>
+              {local:$i}
+              {php}$i=0;{/php}
+              {fores $score as $s}
+              <tr>
+                  <td>#{!++$i}</td>
+                  <td>{$s.TName}</td>
+                  <td>{!$s.TScore}</td>
+                  <td>{!$s.TLine}</td>
+              </tr>
+              {/fores}
+          </table>
+      </div>
+  
+      <div id="highscore">
+          <div>Ievadi savu vārdu</div>
+          <input type="text" id="nick" placeholder="Your name">
+          <span id="submit">ej</span>
+      </div>
+  
+      <div id="restart">
+          Spied lai atsāktu!
+      </div>
+  
+      <div style="position:absolute;left: 560px;top: 250px;">
+          <div id="stat">
+              Vērtējums: <span id="score">0</span><br>
+              Dzēstās līnijas: <span id="lines">0</span><br>
+          </div>
+      </div>
+
+
+    <script src="../js/tetris.js"></script>
+
+</body>
+</html>
